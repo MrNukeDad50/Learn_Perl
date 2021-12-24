@@ -23,4 +23,4 @@ working through the Beginning Perl Lessons.
 5. Revert the last commit
     - This is now complete
 6. Update other repository on local Mac
-    - 
+    - This is now complete
