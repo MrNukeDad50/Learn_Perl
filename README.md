@@ -19,4 +19,8 @@ working through the Beginning Perl Lessons.
     - Updated and commit the changes again to GitHub
     - This is now complete
 4. Repeat the clone on my linux box and upload the template for lesson 1. on Ubuntu
-
+    - This is now complete
+5. Revert the last commit
+    - This is now complete
+6. Update other repository on local Mac
+    - 
