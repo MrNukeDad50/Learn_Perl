@@ -17,5 +17,6 @@ working through the Beginning Perl Lessons.
     - This is now complete
 3. Now update the same repository using Visual Studio Code
     - Updated and commit the changes again to GitHub
+    - This is now complete
 4. Repeat the clone on my linux box and upload the template for lesson 1. on Ubuntu
 
