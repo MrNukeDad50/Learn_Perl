@@ -9,4 +9,13 @@ I also want to do this on two platforms so i can get used to using it
 in multiple locations and manage the code.
 Lastly, I want to establish a template for 
 working through the Beginning Perl Lessons.
+1. Create a GitHub Repository called "BeginningPerl" - done
+2. Using the Mac Terminal:
+    - Clone "BeginningPerl" repository
+    - Update README.md to include Lesson 0 using nano
+    - Add, commit, and push the updated README to GitHub
+    - This is now complete
+3. Now update the same repository using Visual Studio Code
+    - Updated and commit the changes again to GitHub
+4. Repeat the clone on my linux box and upload the template for lesson 1. on Ubuntu
 
