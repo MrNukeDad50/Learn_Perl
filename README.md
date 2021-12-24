@@ -24,3 +24,10 @@ working through the Beginning Perl Lessons.
     - This is now complete
 6. Update other repository on local Mac
     - This is now complete
+## Lesson 1: Learning Perl and Git
+The purpose of this is to get learning some basics
+1. Create a new branch for Lesson 1
+2. make a simultaneous change to the main branch
+3. Work through Chapter 1 in Beginning Perl
+4. Complete the exercises, check in the branch, and merge the changes back to main
+5. Delete the completed branch.
