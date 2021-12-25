@@ -4,9 +4,12 @@ use warnings;
 
 =beginning of template
 # =========================
+# Beginning Perl
+# Lesson 01
+# First Steps
+# =========================
 # Assignment
 # =========================
-# Description
 print "===========BEGIN==========\n";
 print "   \n";
 print "==========================\n";
