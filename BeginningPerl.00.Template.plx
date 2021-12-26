@@ -2,6 +2,12 @@
 use strict;
 use warnings;
 
+# =========================
+# BeginningPerl.filename.plx
+# Beginning Perl
+# Lesson XX
+# Title
+
 =beginning of template
 # =========================
 # Assignment

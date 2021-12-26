@@ -103,3 +103,74 @@ print 0xBEEF;
 print "\n";
 print "===========FIN============\n";
 print "\n\n";
+
+# =========================
+# Exercise 01: Look through documentation
+# =========================
+# Description
+print "===========BEGIN==========\n";
+print "Ex01 Documentatino \n";
+print "==========================\n";
+print "\n";
+print "I've looked up the perldoc command.\n";
+print "\n";
+print "===========FIN============\n";
+print "\n\n";
+
+# =========================
+# Ex01: newline.plx
+# =========================
+# Description
+print "===========BEGIN==========\n";
+print "Ex01:newline.plx   \n";
+print "==========================\n";
+print "\n";
+print "Hi Mum.\nThis is my second program. \n";
+print "Hi Mum.  
+            This is my second program. \n";
+# Do stuff here
+print "\n";
+print "===========FIN============\n";
+print "\n\n";
+
+# =========================
+# Ex03: Code
+# =========================
+# Description
+print "===========BEGIN==========\n";
+print "EX03:Download code   \n";
+print "==========================\n";
+print "\n";
+print "I tried to download from http://www.wrox.com,\n";
+print "but the site no longer seems to work \n";
+print "\n";
+print "===========FIN============\n";
+print "\n\n";
+
+# =========================
+# EX04: perl homepage
+# =========================
+# Description
+print "===========BEGIN==========\n";
+print "   \n";
+print "==========================\n";
+print "\n";
+print "I visited p2p.wrox.com \n";
+print "\n";
+print "===========FIN============\n";
+print "\n\n";
+
+=beginning template
+# =========================
+# Assignment
+# =========================
+# Description
+print "===========BEGIN==========\n";
+print "   \n";
+print "==========================\n";
+print "\n";
+# Do stuff here
+print "\n";
+print "===========FIN============\n";
+print "\n\n";
+=end
