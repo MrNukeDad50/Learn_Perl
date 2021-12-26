@@ -30,7 +30,9 @@ The purpose of this is to get learning some basics
 2. Make a change to the main branch - Done (added these new steps)
 3. Work through Chapter 1 in Beginning Perl - Done
 4. Complete the exercises - Done
-5. Check in the branch
-6. Merge the changes in from main
-7. Merge the branch back into main
-5. Delete the completed branch.
+5. Check in the branch - Done
+6. Merge the changes in from main - Done
+7. Merge the branch back into main - Done
+5. Delete the completed branch. - Done 
+    Note: this was done via 'git push origin --delete BeginningPerl-Lesson01'
+    
