@@ -74,9 +74,15 @@ print " \\x = unicode character .\x{1F18} \n";
 print "\n";
 print "===========FIN============\n";
 print "\n\n";
+<<<<<<< HEAD
 
 
 
+=======
+
+
+
+>>>>>>> f0cb9abdd124d4f5e2528a8370ad0652b0a8940e
 
 # =========================
 # White Space
@@ -105,4 +111,8 @@ print 0xBEEF;
 # Do stuff here
 print "\n";
 print "===========FIN============\n";
+<<<<<<< HEAD
 print "\n\n";
+=======
+print "\n\n";
+>>>>>>> f0cb9abdd124d4f5e2528a8370ad0652b0a8940e
