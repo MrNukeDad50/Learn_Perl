@@ -10,8 +10,8 @@ The purposes of this lesson:
 5. Make basic calculations
 6. Get data from the user
 Actions;
-1. Create a new branch 'BeginningPerl-Lesson02'
-3. Work through Chapter 2 in Beginning Perl
+1. Create a new branch 'BeginningPerl-Lesson02' - Done
+3. Work through Chapter 2 in Beginning Perl - Done
 4. Complete the Exercises
 5. Merge in changes from the main branch
 6. Confirm code runs
