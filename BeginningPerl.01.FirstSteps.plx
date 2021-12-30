@@ -104,12 +104,15 @@ print "\n";
 print "===========FIN============\n";
 print "\n\n";
 
-# =========================
-# Exercise 01: Look through documentation
-# =========================
-# Description
+# ===============================================================
+# Exercizes
+# ===============================================================
+print "======================================================\n";
+print "                     Exercises      \n";
+print "======================================================\n";
+
 print "===========BEGIN==========\n";
-print "Ex01 Documentatino \n";
+print "Ex01 Documentation \n";
 print "==========================\n";
 print "\n";
 print "I've looked up the perldoc command.\n";
@@ -118,11 +121,11 @@ print "===========FIN============\n";
 print "\n\n";
 
 # =========================
-# Ex01: newline.plx
+# Ex02: newline.plx
 # =========================
 # Description
 print "===========BEGIN==========\n";
-print "Ex01:newline.plx   \n";
+print "Ex02:newline.plx   \n";
 print "==========================\n";
 print "\n";
 print "Hi Mum.\nThis is my second program. \n";
@@ -152,7 +155,7 @@ print "\n\n";
 # =========================
 # Description
 print "===========BEGIN==========\n";
-print "   \n";
+print " EX04: Perl Homepage  \n";
 print "==========================\n";
 print "\n";
 print "I visited p2p.wrox.com \n";
