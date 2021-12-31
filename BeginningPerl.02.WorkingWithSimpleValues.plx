@@ -363,6 +363,118 @@ print "                     Exercises      \n";
 print "======================================================\n";
 
 # =========================
+# Exercise 01
+# =========================
+# Description
+print "===========BEGIN==========\n";
+print "EX01: Currency Revamp   \n";
+print "==========================\n";
+print "\n";
+print "1. Change the currency conversion program so that it asks for an\n";
+print "   exchange rate and three prices to convert.\n";
+print " ..... \n";
+print "\t -- Currency converter -- \n\nPlease enter the exchange rate in yen/lbs: ";
+$yen = <STDIN>;
+my $amount;
+print "\t 1 of 3: Please enter the first amount in yen: ";
+$amount = <STDIN>; chomp $amount;
+print "\n\t", " $amount yen is ",    ($amount/$yen), " pounds\n";
+print "\n\t 2 of 3: Please enter the second amount in yen: ";
+$amount = <STDIN>;chomp $amount;
+print "\n\t", " $amount yen is ",    ($amount/$yen), " pounds\n";
+print "\n\t 3 of 3: Please enter the third amount in yen: ";
+$amount = <STDIN>;chomp $amount;
+print "\n\t", " $amount yen is ",    ($amount/$yen), " pounds\n";
+print "\t", "\n";
+print "===========FIN============\n";
+print "\n\n";
+
+# =========================
+# Exercise 02
+# =========================
+# Description
+print "===========BEGIN==========\n";
+print "EX02: Conversions   \n";
+print "==========================\n";
+print "\n";
+print "2. Write a program that asks for a hexadecimal number and converts it to\n";
+print "   decimal. Then change it to convert an octal number to decimal. \n";
+print " ..... \n";
+print "\t 1. Hex Conversion. Enter a hexidecimal number: ";
+$amount = <STDIN>; chomp $amount;
+print "\t    converted to decimal = ", hex($amount), "\n";
+print "\t 2. Octal Conversion. Enter an octal number: ";
+$amount = <STDIN>; chomp $amount;
+print "\t    converted to decimal = ", oct($amount), "\n";
+# Do stuff here
+print "\n";
+print "===========FIN============\n";
+print "\n\n";
+
+# =========================
+# Exercizes
+# =========================
+# Description
+print "===========BEGIN==========\n";
+print "EX03:  \n";
+print "==========================\n";
+print "\n";
+print "3. Write a program that asks for a decimal number less than 256 and \n";
+print "   converts it to binary. (Hint: You may want to use the bitwise and \n";
+print "   operator, 8 times.) \n";
+print " ..... \n";
+print "\t 1. Decimal Conversion. Enter a decimal number that is < 256: ";
+$amount = <STDIN>; chomp $amount;
+print "\t    converted to binary = ";
+print (($amount&128)/128);
+print (($amount & 64) / 64);
+print (($amount & 32) /32);
+print (($amount & 16)/16);
+print (($amount & 8) /8);
+print (($amount & 4) /4);
+print (($amount & 2) /2);
+print (($amount & 1) /1);
+print "\n";
+print "===========FIN============\n";
+print "\n\n";
+
+# =========================
+# Exercise 04
+# =========================
+# Description
+print "===========BEGIN==========\n";
+print "EX04: Precedence   \n";
+print "==========================\n";
+print "\n";
+print "\n";
+print "===========FIN============\n";
+print "\n\n";
+print "4. Without the aid of the computer, work out the order in which each of \n";
+print "   the following expressions would be computed and their value.\n";
+print "   Put the appropriate parentheses in to reflect the normal precedence: \n";
+print "   4.a Q: 2+6/4-3*5+1\n";
+print "       A: (2+(6/4))-((3*5)+1) = -10.5\n";
+print "   4.b Q: 17+-3**3/2\n";
+print "       A: 17+((-3**3)/2)=-3.5\n";
+print "   4.c Q: 26+3^4*2\n";
+print "	      A: 26+(3^(4*2))=37\n";
+print "   4.d Q: 4+3>=7||2&4*2<4\n";
+print "       A: ((4+3)>=7)||2(&((4*2)<4))= 1\n";
+
+=beginning of exercises
+4. Without the aid of the computer, work out the order in which each of the following
+expressions would be computed and their value.
+Put the appropriate parentheses in to reflect
+the normal precedence:
+❑ 2+6/4-3*5+1
+❑ 17+-3**3/2
+❑ 26+3^4*2
+❑ 4+3>=7||2&4*2<4
+=end
+
+
+=beginning of template
+# =========================
 # Exercizes
 # =========================
 # Description
@@ -374,5 +486,4 @@ print "\n";
 print "\n";
 print "===========FIN============\n";
 print "\n\n";
-=beginning
 =end
