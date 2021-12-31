@@ -12,9 +12,9 @@ The purposes of this lesson:
 Actions;
 1. Create a new branch 'BeginningPerl-Lesson02' - Done
 3. Work through Chapter 2 in Beginning Perl - Done
-4. Complete the Exercises
-5. Merge in changes from the main branch
-6. Confirm code runs
+4. Complete the Exercises - Done
+5. Merge in changes from the main branch - Done
+6. Confirm code runs - Done
 7. Merge branch back into main.
 8. Delete the Lesson02 branch.
 
