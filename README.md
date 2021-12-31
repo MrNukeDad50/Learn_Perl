@@ -15,8 +15,8 @@ Actions;
 4. Complete the Exercises - Done
 5. Merge in changes from the main branch - Done
 6. Confirm code runs - Done
-7. Merge branch back into main.
-8. Delete the Lesson02 branch.
+7. Merge branch back into main.- Done
+8. Delete the Lesson02 branch. - Done
 
 ## Lesson 01: Learning Perl and Git - Done
 The purpose of this is to get learning some basics
