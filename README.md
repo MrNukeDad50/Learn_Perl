@@ -1,5 +1,37 @@
 # BeginningPerl
 Exercises for Learning Perl via Beginning Perl online book
+## Lesson 03: Lists and Hashes
+The purpose of this lesson:
+1. Lists
+2. Simple lists
+3. More Complex Lists
+4. Accessing List values
+5. Slices
+6. Ranges
+7. Combining Slices and Ranges
+8. Arrays
+9. Assigning Arrays
+10. Scalar vs List Context
+11. Adding to an array
+12. Accessing Arrays
+13. Accessing single elements
+14. Accessing muliple elements
+15. Running Through Arrays
+16. Array Functions
+17. Shift and Unshift
+18. Hashes
+19. Creating a Hash
+20. Working with hashs values
+21. Accessing Multiple values
+22. Exercises
+Actions:
+1. Create a new branch 'BeginningPerl-Lesson03'
+3. Work through Chapter 3 in Beginning Perl 
+4. Complete the Exercises
+5. Merge in changes from the main branch
+6. Confirm code runs
+7. Merge branch back into main.
+8. Delete the Lesson02 branch.
 
 ## Lesson 02: Working with Simple Values
 The purposes of this lesson: 
