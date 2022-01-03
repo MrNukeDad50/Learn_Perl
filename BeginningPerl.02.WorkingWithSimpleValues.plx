@@ -460,30 +460,3 @@ print "   4.c Q: 26+3^4*2\n";
 print "	      A: 26+(3^(4*2))=37\n";
 print "   4.d Q: 4+3>=7||2&4*2<4\n";
 print "       A: ((4+3)>=7)||2(&((4*2)<4))= 1\n";
-
-=beginning of exercises
-4. Without the aid of the computer, work out the order in which each of the following
-expressions would be computed and their value.
-Put the appropriate parentheses in to reflect
-the normal precedence:
-❑ 2+6/4-3*5+1
-❑ 17+-3**3/2
-❑ 26+3^4*2
-❑ 4+3>=7||2&4*2<4
-=end
-
-
-=beginning of template
-# =========================
-# Exercizes
-# =========================
-# Description
-print "===========BEGIN==========\n";
-print "   \n";
-print "==========================\n";
-print "\n";
-# Do stuff here
-print "\n";
-print "===========FIN============\n";
-print "\n\n";
-=end
