@@ -160,7 +160,7 @@ print "\n";
 print "===========FIN============\n";
 print "\n\n";
 
-=current point
+
 # =========================
 # Arrays: Adding to an Array 
 # =========================
@@ -169,30 +169,64 @@ print "===========BEGIN==========\n";
 print "Adding to an Array  \n";
 print "==========================\n";
 print "\n";
+print "Using List flattening techniques. Not good but it works. \n";
 my @array3 = (1, 2, 3);
 my @array4;
 @array4 = (@array3, 4, 5, 6);
+print "@array4\n";
 
+@array4 = (3, 5, 7, 9);
+@array4 = (1, @array4, 11);
+print "@array4\n";
 # Do stuff here
 print "\n";
 print "===========FIN============\n";
 print "\n\n";
 
 
+
 # =========================
-# Assignment
+# Accessing an Array
 # =========================
 # Description
 print "===========BEGIN==========\n";
-print "   \n";
+print "Accessing an Array; Single Elements   \n";
 print "==========================\n";
 print "\n";
+print "build an array = 10, 20, 30 \n";
+my @array5 = (10, 20, 30);
+print "then view it in a scalar context to get the number of elements:  ";
+print scalar @array5;
+print "\n";
+print "To access it as \@array[0] gives a warning: ";
+#print @array5[0];
+print "\n";
+print "to avoid the warning indicate you want a scalar ia \$array[1]: ";
+print $array5[0];
 # Do stuff here
+print "\n";
+print "you can use a scalar varable to access the array element you want. In this case \$scalar = 3: ";
+my $scalar1 = 2; 
+print $array5[$scalar1], "\n";
+print "==========joke machine==========\n";
+my @questions = qw(Java Python Perl C);
+my @punchlines = (
+    "None. Change it once, and its the same everywhere.",
+    "One. He just stands below the socket and the wordl revolves around him.",
+    "A million. One to change it, the rest to try and do it in fewer lines.",
+    "\"CHANGE?!!\""
+    );
+print "Will you please enter a number between 1 and 4?: ";
+my $selection = <STDIN>;
+$selection -=1;
+print "How many $questions[$selection] programmers does it take to change a lightbulb?\n\n";
+sleep 2;
+print $punchlines[$selection], "\n";
 print "\n";
 print "===========FIN============\n";
 print "\n\n";
 
-
+=current point
 # =========================
 # Assignment
 # =========================
