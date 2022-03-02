@@ -206,7 +206,7 @@ print $array5[0];
 # Do stuff here
 print "\n";
 print "you can use a scalar varable to access the array element you want. In this case \$scalar = 3: ";
-my $scalar1 = 2; 
+$scalar1 = 2; 
 print $array5[$scalar1], "\n";
 print "==========joke machine==========\n";
 my @questions = qw(Java Python Perl C);
@@ -220,54 +220,139 @@ print "Will you please enter a number between 1 and 4?: ";
 my $selection = <STDIN>;
 $selection -=1;
 print "How many $questions[$selection] programmers does it take to change a lightbulb?\n\n";
-sleep 2;
-print $punchlines[$selection], "\n";
+#sleep 2;
+print $punchlines[$selection], "\n\n";
+print "========= Accessing Multiple Elements ==========\n";
+print "Start with a list slice that should print Apr Jun Aug Sep Oct \n";
+print qw(Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec)[3, 5, 7..9], "\n";
+print "\n On to the next example using sales: \n";
+my @sales = (69, 118, 97, 110, 103, 101, 108, 105, 76, 111, 118, 101);
+my @months = qw(Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec);
+print "Second quarter sales: \n";
+print "@months[3..5]\n@sales[3..5]\n";
+my @q2 = @sales[3..5];
+print "Correcting sales data for May, August, Oct, Nov, and Dec!\n";
+print "64, 101, 114, 111, 117\n";
+@sales[4,7,9..11] = (64, 101, 114, 111, 117);
+print "corrected sales: \n";
+print "@months[4,7,9..11]\n@sales[4,7,9..11]\n";
+print "Swap April and May in the month list \n";
+print "... @months...\n ... SWAP ... \n";
+@months[4,3] = @months[3,4];
+print "... @months...\n";
+
+print "==========Running THrough an array==========\n";
 print "\n";
+for $month (@months) {
+    print $month, "\n";
+}
+print " now to add to each item ...\n";
+for $month (@months) {
+    $month = $month . "...muster";
+}
+for $month (@months) {
+    print $month, "\n";
+}
+print "======== Joke Machine II - Revenge ==============\n";
+for (0 .. $#questions) {
+    print "How many $questions[$_] ";
+    print "programmers does it take to change a lightbulb ? \n";
+ #   sleep 2;
+    print $punchlines[$_], "\n\n";
+ #   sleep 1;
+}
+print " did you notice that clever trick for finding the highest index in an array using \$\# ?\n";
+print "lets try that again...\n";
+print "scalar value    : ", scalar @questions, "\n";
+print "Highest Element : ", $#questions, "\n";
+print "\n\n Array Functions / Array Operators \n\n";
+print " Lets start with reverse () \n";
+my @count = (1..5);
+for (reverse(@count)) {
+    print "$_ .. ";
+}
+print "BLAST OFF !!! \n\n";
+print "now, lets try POP and PUSH \n";
+my $hand;
+my @pileofpaper = ("letter", "newspaper", "gas bill", "notepad");
+print "Here is what's on the desk @pileofpaper\n";
+for (0 .. $#pileofpaper) {
+print "you pick something from the top of the pile.\n";
+$hand = pop @pileofpaper;
+print "you picked up $hand.\n";
+print "left on the desk is @pileofpaper.\n";
+}
+print "\n\n";
+print "now, lets try shift and unshift \n";
+my @shiftarray = ();
+print "\@shiftarray is now @shiftarray \n";
+unshift (@shiftarray, "first");
+print "\@shiftarray is now @shiftarray \n";
+unshift @shiftarray, "second", "third" ;
+print "\@shiftarray is now @shiftarray \n";
+shift @shiftarray;
+print "\@shiftarray is now @shiftarray \n";
+pop @shiftarray;
+print "\@shiftarray is now @shiftarray \n";
+print "\n\n The next thing to try is sorting ...\n";
+my @unsorted = qw(Cohen  Clapton Costello Cream Cocteau);
+print "Unsorted: @unsorted\n";
+my @sorted = sort @unsorted;
+print "Sorted:   @sorted\n";
+print "that worked for alpha sorts, what about numbers? \n";
+@unsorted = (1, 2, 11, 24, 3, 36, 40, 4);
+print "Unsorted: @unsorted\n";
+@sorted = sort @unsorted;
+print "Sorted:   @sorted\n";
+print "so, it doesn't work too well with number so we have to invoke the < = > operator \n";
+my @string = sort { $a cmp $b } @unsorted;
+print "String sort: @string\n";
+my @number = sort { $a <=> $b } @unsorted;
+print "Numeric sort: @number\n";
 print "===========FIN============\n";
 print "\n\n";
-
-=current point
 # =========================
-# Assignment
+# Hashes
 # =========================
 # Description
 print "===========BEGIN==========\n";
-print "   \n";
+print "Hashes   \n";
 print "==========================\n";
 print "\n";
+print "writing initial hashes\n";
+my $place = "Oregon";
+my %where = (
+    Gary        => "Dallas",
+    Lucy        => "Exeter",
+    Ian         => "Reading",
+    Samantha    => "Oregon"
+);
+my %who = reverse %where;
+print "Gary lives in ", $where{Gary}, "\n";
+print "Ian lives in $where{Ian}\n";
+print "$who{Exeter} lives in Exeter \n";
+print "$who{$place} lives in $place\n";    
+print "to add a new value pair to the hash, just call it \n";
+$where{Eva} = "Uxbridge";
+print "Eva lives in $where{Eva}\n";
+print "to reassign, values to the keys, that's no problem either \n";
+$where{Eva} = "Denver";
+print "Eva lives in $where{Eva}\n";
+print "to delete one though, you need the delete function \n";
+print "First, the orginial %where{Lucy}\n";
+print "now delete Lucy \n";
+delete $where{Lucy};
+print "Now print again. @where{Lucy}\n";
+print "Lets try iterating through the hash using the keys function \n";
+for (keys %where){
+    print "$_ lives in $where{$_}\n";
+}
 # Do stuff here
 print "\n";
 print "===========FIN============\n";
 print "\n\n";
 
 
-# =========================
-# Assignment
-# =========================
-# Description
-print "===========BEGIN==========\n";
-print "   \n";
-print "==========================\n";
-print "\n";
-# Do stuff here
-print "\n";
-print "===========FIN============\n";
-print "\n\n";
-
-
-=beginning of template
-# =========================
-# Assignment
-# =========================
-# Description
-print "===========BEGIN==========\n";
-print "   \n";
-print "==========================\n";
-print "\n";
-# Do stuff here
-print "\n";
-print "===========FIN============\n";
-print "\n\n";
 # ===============================================================
 # Exercises
 # ===============================================================
@@ -276,10 +361,87 @@ print "                     Exercises      \n";
 print "======================================================\n";
 
 print "===========BEGIN==========\n";
-print "Ex01 \n";
+print "Ex01 assigning lists\n";
 print "==========================\n";
 print "\n";
 print "Exercise\n";
+print "When you assign to a list, the elements are copied over from the right to the left:\n";
+print "(\$a, \$b) = ( 10, 20 );\n";
+print "will make \$a become 10 and \$b become 20. Investigate what happens when:\n";
+print "❑ There are more elements on the right than on the left.\n";
+print "❑ There are more elements on the left than on the right.\n";
+print "❑ There is a list on the left but a single scalar on the right.\n";
+print "❑ There is a single scalar on the left but a list on the right.\n";
+print "Response\n";
+my $aa=0;
+my $bb=0;
+my $cc=0;
+my $dd =0;
+print "starting with the basics \n";
+print "(\$aa, \$bb) = (10, 20);\n";
+($aa , $bb) = (10, 20);
+print "\$aa = $aa, and \$bb = $bb \n";
+print "more on the right than left\n";
+print "(\$aa, \$bb) = (10, 20, 30);\n";
+($aa , $bb) = (10, 20);
+print "\$aa = $aa, and \$bb = $bb \n";
+print "more on the left than right\n";
+print "(\$aa, \$bb, \$cc, \$dd) = (10, 20, 30);\n";
+($aa , $bb, $cc, $dd) = (10, 20, 30);
+print "\$aa = $aa, and \$bb = $bb, and \$cc = $cc, and \$dd = $dd \n";
+print "now, if there is a list on the left but a sincle scalar on the right.\n";
+print "(\$aa, \$bb) = 10; \n ";
+($aa,$bb) = 10;
+print "\$aa = $aa, and \$bb = $bb \n";
+print "now, if there is a scalar on the left but a list on the right.\n";
+print "\$aa = (10, 20, 30); \n ";
+$aa = (10, 20, 30);
+print "\$aa = $aa, and \$cc = $cc \n";
+
+
+print "===========FIN============\n";
+print "\n\n";
+print "===========BEGIN==========\n";
+print "Ex01 Elements in ranges\n";
+print "==========================\n";
+print "\n";
+print "Exercise\n";
+print "What elements make up the range ('aa' .. 'bb')? What about ('a0' .. 'b9')?\n";
+print "Response\n";
+print "letters up:  ",  ('aa' .. 'bb') , "\n";
+print "or not : ", ('a0' .. 'b9'), "\n";
+#print "$selectiontwo \n";
+print "===========FIN============\n";
+print "\n\n";
+
+
+print "===========BEGIN==========\n";
+print "Ex01 Hash\n";
+print "==========================\n";
+print "\n";
+print "Exercise\n";
+print "Store your important phone numbers in a hash. Write a program to look up numbers by the
+person's name.\n";
+print "Response\n";
+my %phoneList = (
+    Dan     => "706-526-7162",
+    Sarah   => "706-550-7317",
+    Ted     => "706-526-7090"
+);
+print "Enter the name for the phone number:";
+$selection = <STDIN>;
+chomp($selection);
+print "  --  $phoneList{$selection}\n";
+=current 
+print "===========FIN============\n";
+print "\n\n";
+print "===========BEGIN==========\n";
+print "Ex01 Joke Machine 3\n";
+print "==========================\n";
+print "\n";
+print "Exercise\n";
+print "Turn the joke machine program from two arrays into one hash. While doing so, write some
+better lightbulb jokes.\n";
 print "Response\n";
 print "===========FIN============\n";
 print "\n\n";
