@@ -432,17 +432,3 @@ print "Enter the name for the phone number:";
 $selection = <STDIN>;
 chomp($selection);
 print "  --  $phoneList{$selection}\n";
-=current 
-print "===========FIN============\n";
-print "\n\n";
-print "===========BEGIN==========\n";
-print "Ex01 Joke Machine 3\n";
-print "==========================\n";
-print "\n";
-print "Exercise\n";
-print "Turn the joke machine program from two arrays into one hash. While doing so, write some
-better lightbulb jokes.\n";
-print "Response\n";
-print "===========FIN============\n";
-print "\n\n";
-=end
