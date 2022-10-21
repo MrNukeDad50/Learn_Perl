@@ -32,15 +32,19 @@ my ($value, $from, $to, $rate, %rates);
 print "Enter your starting currency: ";
 $from = <STDIN>;
 chomp($from);
-if (not exists $rates{$from}){
-    die "I don't know anything about $from as a currency\n";
-}
+#if (not exists $rates{$from}){
+#    die "I don't know anything about $from as a currency\n";
+#}
+die "I don't know anything about $from as a currency\n" unless ( exists $rates{$from});
+
 print "Enter your target currency: ";
 $to = <STDIN>;
 chomp($to);
-if (not exists $rates{$to}) {
-    die "I don't know anything about $to as a currency\n";
-}
+#if (not exists $rates{$to}) {
+#    die "I don't know anything about $to as a currency\n";
+#}
+die " I don't knew anything about $to as a currency \n" unless (exists $rates{$to});
+
 print "Enter your amount: ";
 $value = <STDIN>;
 chomp ($value);
@@ -91,19 +95,11 @@ if (defined $b){
     print "\$b has a value of $b \n";
 }
 
-print "===========FIN============\n";
-print "\n\n";
-=beginning of template
-# =========================
-# Assignment
-# =========================
-# Description
-print "===========BEGIN==========\n";
-print "   \n";
-print "==========================\n";
-print "\n";
-# Do stuff here
-print "\n";
+print "==========a quick test=====\n";
+print " is     (()) true? \n";
+#if ( (()) ) then {
+#    print " Yes. yes, it is.\n";
+#}
 print "===========FIN============\n";
 print "\n\n";
 =beginning of template
