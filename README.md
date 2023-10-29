@@ -62,7 +62,7 @@ The purpose of this is to get learning some basics
 5. Delete the completed branch. - Done 
     Note: this was done via 'git push origin --delete BeginningPerl-Lesson01'
 
- // comment
+
 ## Lesson 00: Setup - Done
 The purpose of this is to prepare for working through the Begining Perl online book
 I want to setup a GitHub repsitory and make sure i can do the basic changes 
