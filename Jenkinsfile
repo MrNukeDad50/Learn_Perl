@@ -5,6 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'My Message'
+                echo 'myChange'
             }
         }
         stage ('cleanup') {
